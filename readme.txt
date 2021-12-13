@@ -1,8 +1,20 @@
 Readme:
 
+This project is an API that was built to process and enquiry data. 
+Currently the data is stored in-memory using Entity Framework.
+
+Currently, the API endpoints are:
+
+* GET /api/A/{title}&{Rating}&{ReleaseYear}&{Genres} - returns a list of movies that satisfies the search criteria. Note that Genres is a list and can be inserted repeatedly.
+* GET /api/B/ - returns the top 5 higest rated movies.
+* GET /api/C/{username} - returns the top 5 highest rather movie for an user.
+* POST/PUT /api/D/{Username}&{MovieTitle}&{Rating} - Adds or Updates a review for an user for a movie.
+
 The API has multiple layers:
 * BaseLayer - responsible for the very fundamental classes for our API.
-
+* Entity Layer - the model classes.
+* DataLayer - processes the data directly.
+* Business Layer - All the processes that are not high level or are not touching the data directly from context.
 
 Future ToDos:
 
@@ -13,3 +25,7 @@ Future ToDos:
 - Implement BO / DO layer to be async 
 - Middleware securty and token authorisation
 - Refactor the Base classes into interfaces
+- Create Test cases for API endpoints
+- Average rating for movies should be done by the uncalculated value.
+
+Written by Vlad Garaba
