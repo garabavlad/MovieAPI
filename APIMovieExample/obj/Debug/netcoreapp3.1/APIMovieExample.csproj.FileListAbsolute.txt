@@ -1,38 +1,77 @@
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\appsettings.json
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\APIMovieExample.exe
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\APIMovieExample.deps.json
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\APIMovieExample.runtimeconfig.json
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\APIMovieExample.runtimeconfig.dev.json
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\APIMovieExample.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\APIMovieExample.pdb
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.GeneratedMSBuildEditorConfig.editorconfig
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.AssemblyInfoInputs.cache
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.AssemblyInfo.cs
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.csproj.CoreCompileInputs.cache
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.MvcApplicationPartsAssemblyInfo.cache
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\staticwebassets\APIMovieExample.StaticWebAssets.Manifest.cache
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\staticwebassets\APIMovieExample.StaticWebAssets.xml
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\scopedcss\bundle\APIMovieExample.styles.css
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.RazorTargetAssemblyInfo.cache
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.pdb
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\obj\Debug\netcoreapp3.1\APIMovieExample.genruntimeconfig.cache
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\System.Web.Http.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\VladislavG\New folder (2)\APIMovieExample\APIMovieExample\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/appsettings.json
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.exe
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.deps.json
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.runtimeconfig.json
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.runtimeconfig.dev.json
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.pdb
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.GeneratedMSBuildEditorConfig.editorconfig
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.AssemblyInfoInputs.cache
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.AssemblyInfo.cs
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.csproj.CoreCompileInputs.cache
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.MvcApplicationPartsAssemblyInfo.cache
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/staticwebassets/APIMovieExample.StaticWebAssets.Manifest.cache
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/staticwebassets/APIMovieExample.StaticWebAssets.xml
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/scopedcss/bundle/APIMovieExample.styles.css
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.RazorTargetAssemblyInfo.cache
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.pdb
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.genruntimeconfig.cache
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/System.Net.Http.Formatting.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/System.Web.Http.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+C:/VladislavG/New folder (2)/APIMovieExample/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.StaticWebAssets.xml
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.deps.json
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.runtimeconfig.json
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.runtimeconfig.dev.json
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/APIMovieExample.pdb
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/System.Net.Http.Formatting.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/System.Web.Http.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.csproj.AssemblyReference.cache
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.GeneratedMSBuildEditorConfig.editorconfig
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.AssemblyInfoInputs.cache
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.AssemblyInfo.cs
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.csproj.CoreCompileInputs.cache
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.MvcApplicationPartsAssemblyInfo.cache
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/staticwebassets/APIMovieExample.StaticWebAssets.Manifest.cache
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.RazorTargetAssemblyInfo.cache
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.csproj.CopyComplete
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.dll
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.pdb
+/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/Debug/netcoreapp3.1/APIMovieExample.genruntimeconfig.cache

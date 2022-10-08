@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieTest\\APIMovieTest.csproj": {}
+    "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj": {}
   },
   "projects": {
-    "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieExample\\APIMovieExample.csproj": {
+    "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieExample\\APIMovieExample.csproj",
+        "projectUniqueName": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj",
         "projectName": "APIMovieExample",
-        "projectPath": "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieExample\\APIMovieExample.csproj",
-        "packagesPath": "C:\\Users\\vgaraba\\.nuget\\packages\\",
-        "outputPath": "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieExample\\obj\\",
+        "projectPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj",
+        "packagesPath": "/Users/garaba.vlad/.nuget/packages/",
+        "outputPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vgaraba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/garaba.vlad/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,7 +41,7 @@
           "dependencies": {
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
-              "version": "[5.2.7, )"
+              "version": "[5.2.9, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -63,7 +58,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,40 +71,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieTest\\APIMovieTest.csproj": {
+    "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieTest\\APIMovieTest.csproj",
+        "projectUniqueName": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj",
         "projectName": "APIMovieTest",
-        "projectPath": "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieTest\\APIMovieTest.csproj",
-        "packagesPath": "C:\\Users\\vgaraba\\.nuget\\packages\\",
-        "outputPath": "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieTest\\obj\\",
+        "projectPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj",
+        "packagesPath": "/Users/garaba.vlad/.nuget/packages/",
+        "outputPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vgaraba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/garaba.vlad/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieExample\\APIMovieExample.csproj": {
-                "projectPath": "C:\\VladislavG\\New folder (2)\\APIMovieExample\\APIMovieExample\\APIMovieExample.csproj"
+              "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj": {
+                "projectPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj"
               }
             }
           }
@@ -150,7 +141,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -159,7 +151,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
