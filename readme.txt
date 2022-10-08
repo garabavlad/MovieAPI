@@ -1,6 +1,6 @@
 Readme:
 
-This project is an API that was built to process and enquiry data. 
+This is a representation of an API that is reading, writing and updating data for a movie collection.
 Currently the data is stored in-memory using Entity Framework.
 
 Currently, the API endpoints are:
