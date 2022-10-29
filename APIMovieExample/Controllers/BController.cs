@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
-using APIMovieExample.Base;
-using APIMovieExample.BussinessLayer;
+using APIMovie.Controllers;
 using APIMovieExample.DataLayer;
-using APIMovieExample.EntityLayer;
-using APIMovieExample.QueryParameters;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using MovieAPI.Business;
+using MovieAPI.Models;
 
 namespace APIMovieExample.Controllers
 {
@@ -30,7 +26,7 @@ namespace APIMovieExample.Controllers
         public async Task<IActionResult> SearchForMovie()
         {
             IActionResult result;
-            IEnumerable<MovieModel> selectedMovies;
+            IEnumerable<Movie> selectedMovies;
 
             selectedMovies = _movieBO.GetTop5MoviesByRating();
 
@@ -43,7 +39,6 @@ namespace APIMovieExample.Controllers
             {
                 result = NotFound();
             }
-
 
             return result;
         }

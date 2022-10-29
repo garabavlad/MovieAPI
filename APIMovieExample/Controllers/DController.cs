@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
-using APIMovieExample.Base;
-using APIMovieExample.BussinessLayer;
+using APIMovie.Controllers;
 using APIMovieExample.DataLayer;
-using APIMovieExample.EntityLayer;
 using APIMovieExample.QueryParameters;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using MovieAPI.Business;
+using MovieAPI.Models;
 
 namespace APIMovieExample.Controllers
 {
@@ -35,13 +33,13 @@ namespace APIMovieExample.Controllers
         public async Task<IActionResult> AddOrUpdateReview([FromQuery]RatingQueryParameter input)
         {
             IActionResult result;
-            IEnumerable<MovieModel> selectedMovies;
+            IEnumerable<Movie> selectedMovies;
 
             if (input.IsValid)
             {
                 Int32.TryParse(input.Rating, out int parsedRating);
                 var user = _userBO.SearchForUser(input.Username);
-                MovieModel movie = null;
+                Movie movie = null;
                 
                 if (!String.IsNullOrEmpty(input.MovieTitle))
                     movie = _movieBO.SearchForMovies(input.MovieTitle).FirstOrDefault();

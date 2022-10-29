@@ -1,32 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj": {}
+    "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieTest\\APIMovieTest.csproj": {}
   },
   "projects": {
-    "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj": {
+    "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieExample\\APIMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj",
-        "projectName": "APIMovieExample",
-        "projectPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj",
-        "packagesPath": "/Users/garaba.vlad/.nuget/packages/",
-        "outputPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/obj/",
+        "projectUniqueName": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieExample\\APIMovie.csproj",
+        "projectName": "APIMovie",
+        "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieExample\\APIMovie.csproj",
+        "packagesPath": "C:\\Users\\Garab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/garaba.vlad/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Garab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\BusinessLayer\\BusinessLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -36,8 +41,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
@@ -45,11 +50,15 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[6.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
@@ -71,35 +80,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj": {
+    "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieTest\\APIMovieTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj",
+        "projectUniqueName": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieTest\\APIMovieTest.csproj",
         "projectName": "APIMovieTest",
-        "projectPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/APIMovieTest.csproj",
-        "packagesPath": "/Users/garaba.vlad/.nuget/packages/",
-        "outputPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieTest/obj/",
+        "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieTest\\APIMovieTest.csproj",
+        "packagesPath": "C:\\Users\\Garab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/garaba.vlad/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Garab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj": {
-                "projectPath": "/Users/garaba.vlad/Projects/MovieAPI/APIMovieExample/APIMovieExample.csproj"
+              "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieExample\\APIMovie.csproj": {
+                "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\APIMovieExample\\APIMovie.csproj"
               }
             }
           }
@@ -111,8 +121,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -151,7 +161,254 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\BusinessLayer\\BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Garab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Garab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\Models.csproj"
+              },
+              "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\PersistanceLayer\\PersistanceLayer.csproj": {
+                "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\PersistanceLayer\\PersistanceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Garab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Garab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Garab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Garab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\PersistanceLayer\\PersistanceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\PersistanceLayer\\PersistanceLayer.csproj",
+        "projectName": "PersistanceLayer",
+        "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\PersistanceLayer\\PersistanceLayer.csproj",
+        "packagesPath": "C:\\Users\\Garab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\PersistanceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Garab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Garab\\Source\\Repos\\garabavlad\\MovieAPI\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

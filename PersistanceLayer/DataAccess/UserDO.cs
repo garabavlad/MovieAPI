@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using APIMovieExample.BaseLayer;
-using APIMovieExample.EntityLayer;
-using Microsoft.EntityFrameworkCore;
-using static APIMovieExample.BaseLayer.BaseEnums;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieAPI.Models;
 
 namespace APIMovieExample.DataLayer
 {
-    public class UserDO : BaseDO
+    public class UserDO
     {
         private readonly MovieDatabaseContext _movieContext;
 
@@ -20,12 +14,12 @@ namespace APIMovieExample.DataLayer
             _movieContext.Database.EnsureCreated();
         }
 
-        public UserModel GetEntity(String username)
+        public User GetEntity(String username)
         {
             return _movieContext.Users.FirstOrDefault(U => U.Username.ToLower() == username.ToLower());
         }
 
-        public UserModel GetEntity(long Id)
+        public User GetEntity(long Id)
         {
             return _movieContext.Users.FirstOrDefault(U => U.Id == Id);
         }

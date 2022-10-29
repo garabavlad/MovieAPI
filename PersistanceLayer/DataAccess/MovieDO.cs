@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using APIMovieExample.BaseLayer;
-using APIMovieExample.EntityLayer;
-using Microsoft.EntityFrameworkCore;
-using static APIMovieExample.BaseLayer.BaseEnums;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieAPI.Core;
+using MovieAPI.Models;
 
 namespace APIMovieExample.DataLayer
 {
 
-    public class MovieDO : BaseDO
+    public class MovieDO
     {
         private readonly MovieDatabaseContext _movieContext;
 
@@ -22,20 +17,20 @@ namespace APIMovieExample.DataLayer
                 _movieContext.Database.EnsureCreated();
         }
 
-        public MovieModel GetEntity(long Id)
+        public Movie GetEntity(long Id)
         {
             return _movieContext.Movies.FirstOrDefault(M => M.Id == Id);
         }
 
-        public IEnumerable<MovieModel> RetrieveMovies(string title = null, string rating = null, string releaseYear = null)
+        public IEnumerable<Movie> RetrieveMovies(string title = null, string rating = null, string releaseYear = null)
         {
-            IEnumerable<MovieModel> movies = _movieContext.Movies;
+            IEnumerable<Movie> movies = _movieContext.Movies;
 
             if (movies == null)
-                movies = new List<MovieModel>();
+                movies = new List<Movie>();
 
             if (!String.IsNullOrEmpty(title))
-                movies = Algorhythms.ApplySearchAlgorhythm(movies, title);
+                movies = this.ApplySearchAlgorhythm(movies, title);
 
             if (!String.IsNullOrEmpty(rating))
                 movies = movies.Where(m => m.AverageRating == rating);
@@ -47,6 +42,10 @@ namespace APIMovieExample.DataLayer
             return movies;
         }
 
-
+        public IEnumerable<Movie> ApplySearchAlgorhythm(IEnumerable<Movie> movies, String title)
+        {
+            // here we could use advanced searching algorhythms
+            return movies.Where(M => M.Title.Contains(title));
+        }
     }
 }

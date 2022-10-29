@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using APIMovieExample.BaseLayer;
-using APIMovieExample.EntityLayer;
-using Microsoft.EntityFrameworkCore;
-using static APIMovieExample.BaseLayer.BaseEnums;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieAPI.Models;
 
 namespace APIMovieExample.DataLayer
 {
-    public class ReviewDO : BaseDO
+    public class ReviewDO
     {
         private readonly MovieDatabaseContext _movieContext;
 
@@ -20,25 +14,25 @@ namespace APIMovieExample.DataLayer
             _movieContext.Database.EnsureCreated();
         }
 
-        public IEnumerable<ReviewModel> RetrieveReviewsByMovieId(long parentId)
+        public IEnumerable<Review> RetrieveReviewsByMovieId(long parentId)
         {
-            IEnumerable<ReviewModel> reviews = _movieContext.Reviews;
+            IEnumerable<Review> reviews = _movieContext.Reviews;
 
             reviews = reviews.Where(x => x.ParentMovieId == parentId).ToList();
             return reviews;
         }
 
-        public IEnumerable<ReviewModel> RetrieveReviewsByUserId(long parentId)
+        public IEnumerable<Review> RetrieveReviewsByUserId(long parentId)
         {
-            IEnumerable<ReviewModel> reviews = _movieContext.Reviews;
+            IEnumerable<Review> reviews = _movieContext.Reviews;
 
             reviews = reviews.Where(x => x.ParentUserId == parentId).ToList();
             return reviews;
         }
 
-        public void AddOrUpdateEntity(ReviewModel reviewModel)
+        public void AddOrUpdateEntity(Review reviewModel)
         {
-            ReviewModel existingReview = _movieContext.Reviews.FirstOrDefault(R => R.ParentMovieId == reviewModel.ParentMovieId && R.ParentUserId == reviewModel.ParentUserId);
+            Review existingReview = _movieContext.Reviews.FirstOrDefault(R => R.ParentMovieId == reviewModel.ParentMovieId && R.ParentUserId == reviewModel.ParentUserId);
 
             if (existingReview == null)
             {
