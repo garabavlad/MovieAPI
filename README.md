@@ -1,4 +1,4 @@
-Readme:
+[![Board Status](https://dev.azure.com/VGaraba/2f45c7ca-819f-477b-a388-bb430ce44a15/9807f194-35fc-4006-80d3-8d0d8af2c7d0/_apis/work/boardbadge/5ead1fc5-90ae-4808-80f3-a5d138921545)](https://dev.azure.com/VGaraba/2f45c7ca-819f-477b-a388-bb430ce44a15/_boards/board/t/9807f194-35fc-4006-80d3-8d0d8af2c7d0/Microsoft.RequirementCategory)
 
 This is a representation of an API that is reading, writing and updating data for a movie collection.
 Currently the data is stored in-memory using Entity Framework.
@@ -27,5 +27,3 @@ Future ToDos:
 - Refactor the Base classes into interfaces
 - Create Test cases for API endpoints
 - Average rating for movies should be done by the uncalculated value.
-
-Written by Vlad Garaba
