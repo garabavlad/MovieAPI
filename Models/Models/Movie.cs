@@ -7,7 +7,7 @@ public class Movie
 {
     public long Id { get; set; }
     public String Title { get; set; }
-    public String RunningTime { get; set; } // might need to change this to decimal later on
+    public String RunningTime { get; set; }
 
     //[NotMapped]
     //public IEnumerable<MovieGenre> Genres { get; set; }
