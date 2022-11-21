@@ -1,69 +1,42 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using APIMovie.Controllers;
-using APIMovieExample.DataLayer;
-using APIMovieExample.QueryParameters;
+﻿using System.Linq;
+using APIMovie.ModelViews;
+using APIMovie.Validators;
 using Microsoft.AspNetCore.Mvc;
 using MovieAPI.Business;
-using MovieAPI.Models;
+using MovieAPI.Interfaces;
 
 namespace APIMovieExample.Controllers
 {
     [ApiController]
-    [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
-    public class CController : APIMovieController
+    [Route("api/[controller]")]
+    public class CController : ControllerBase
     {
-        //private MovieBO _movieBO;
         private UserBO _userBO;
-        //private readonly MovieDatabaseContext _context;
 
-        public CController(MovieDatabaseContext context)
+        public CController(IUnitOfWork unitOfWork)
         {
-            //_movieBO = new MovieBO(context);
-            _userBO = new UserBO(context);
-            //_context = context;
+            _userBO = new UserBO(unitOfWork);
         }
 
-        [Microsoft.AspNetCore.Mvc.HttpGet]
-        public async Task<IActionResult> SearchForMovie([FromQuery]RatingQueryParameter input)
+        [HttpGet]
+        public IActionResult SearchForMovie([FromQuery]UserQueryParameter input)
         {
-            IActionResult result;
-            IEnumerable<Movie> selectedMovies;
+            var inputValidator = new UserQueryParameterValidator();
+            var validationResult = inputValidator.Validate(input);
 
-            if (input.IsValid)
-            {
-                var user = _userBO.SearchForUser(input.Username);
+            if (!validationResult.IsValid)
+                return BadRequest("Invalid input");
 
-                if (user != null)
-                {
-                    _userBO.SetEntityContext(user);
-                    selectedMovies = _userBO.GetTop5MoviesByRating();
+            var user = _userBO.SearchForUser(input.Username);
+            if (user == null)
+                return NotFound();
+                 
 
-                    if (selectedMovies.Count() > 0)
-                    {
-                        result = Ok(selectedMovies);
+            var selectedMovies = _userBO.GetTop5MoviesByRating(user);
 
-                    }
-                    else
-                    {
-                        result = NotFound();
-                    }
-
-                }
-                else
-                {
-                    result = NotFound();
-                }
-            }
-            else
-            {
-                result = BadRequest();
-            }
-
-            
-
-            return result;
+            return selectedMovies.Count() > 0
+                ? Ok(selectedMovies)
+                : NotFound();
         }
 
     }

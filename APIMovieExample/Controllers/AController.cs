@@ -1,54 +1,38 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using APIMovie.Controllers;
-using APIMovieExample.DataLayer;
-using APIMovieExample.QueryParameters;
+﻿using System.Linq;
+using APIMovie.ModelViews;
+using APIMovie.Validators;
 using Microsoft.AspNetCore.Mvc;
 using MovieAPI.Business;
-using MovieAPI.Models;
+using MovieAPI.Interfaces;
 
 namespace APIMovieExample.Controllers
 {
     [ApiController]
-    [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
-    public class AController : APIMovieController
+    [Route("api/[controller]")]
+    public class AController : ControllerBase
     {
         private MovieBO _movieBO;
-        //private readonly MovieDatabaseContext _context;
 
-        public AController(MovieDatabaseContext context)
+        public AController(IUnitOfWork unitOfWork)
         {
-            _movieBO = new MovieBO(context);
-            //_context = context;
+            _movieBO = new MovieBO(unitOfWork);
         }
 
-        [Microsoft.AspNetCore.Mvc.HttpGet]
-        public async Task<IActionResult> SearchForMovie([FromQuery]MovieSearchQueryParameter input)
+        [HttpGet]
+        public IActionResult SearchForMovie([FromQuery] MovieSearchQueryParameter input)
         {
-            IActionResult result;
-            IEnumerable<Movie> selectedMovies;
+            var inputValidator = new MovieSearchQueryParameterValidator();
+            var validationResult = inputValidator.Validate(input);
 
-            if (input.IsValid)
-            {
-                selectedMovies = _movieBO.SearchForMovies(input.Title, input.Rating, input.ReleaseYear, input.Genres);
+            if (!validationResult.IsValid)
+                return BadRequest("Invalid input");
 
-                if (selectedMovies.Count() > 0)
-                {
-                    result = Ok(selectedMovies);
 
-                }
-                else
-                {
-                    result = NotFound();
-                }
-            }
-            else
-            {
-                result = BadRequest();
-            }
+            var selectedMovies = _movieBO.SearchForMovies(input.Title, input.Genres);
 
-            return result;
+            return selectedMovies.Count() > 0 
+                ? Ok(selectedMovies) 
+                : NotFound();
         }
     }
 }

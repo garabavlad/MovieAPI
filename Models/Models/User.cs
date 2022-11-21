@@ -18,7 +18,6 @@ public class User
 
     public string Username { get; set; }
 
-    [JsonIgnore]
     public virtual List<Review> Reviews { get; set; }
 
 }

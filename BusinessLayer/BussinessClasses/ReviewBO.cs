@@ -1,45 +1,46 @@
-﻿using APIMovieExample.DataLayer;
-using Microsoft.EntityFrameworkCore;
+﻿using MovieAPI.Interfaces;
 using MovieAPI.Models;
 
 namespace MovieAPI.Business;
 
 public class ReviewBO
 {
-    private DbContext _context;
-    public ReviewBO(DbContext context)
+    private IUnitOfWork _unitOfWork;
+    public ReviewBO(IUnitOfWork unitOfWork)
     {
-        _context = context;
+        _unitOfWork = unitOfWork;
     }
 
-    public IEnumerable<Review> SearchForReviewsByMovieParent(long parentId)
+    public IEnumerable<Review> GetAllNonCircular()
     {
-        ReviewDO reviewDO = new ReviewDO(_context);
-        IEnumerable<Review> reviews = reviewDO.RetrieveReviewsByMovieId(parentId);
+        var reviews = _unitOfWork.ReviewRepository
+            .GetAll();
 
-        return reviews;
-    }
-
-    public IEnumerable<Review> SearchForReviewsByUserParent(long parentId)
-    {
-        ReviewDO reviewDO = new ReviewDO(_context);
-        IEnumerable<Review> reviews = reviewDO.RetrieveReviewsByUserId(parentId);
-
-        return reviews;
-    }
-
-    public void InsertReview(User user, Movie movie, int rating)
-    {
-        ReviewDO reviewDO = new ReviewDO(_context);
-        var newReview = new Review
+        foreach (var review in reviews)
         {
-            Rating = rating.ToString(),
-            ParentMovie = movie,
-            ParentMovieId = movie.Id,
-            ParentUser = user,
-            ParentUserId = user.Id
-        };
+            review.Movie.Reviews = null;
+            review.User.Reviews = null;
+        }
 
-        reviewDO.AddOrUpdateEntity(newReview);
+        return reviews;
+    }
+
+    public int InsertReview(User user, Movie movie, int rating)
+    {
+        var existingReview = _unitOfWork.ReviewRepository.Find(r => r.ParentUserId == user.Id && r.ParentMovieId == movie.Id)
+            .FirstOrDefault();
+
+        if (existingReview != null)
+        {
+            existingReview.Rating = rating;
+            _unitOfWork.ReviewRepository.Update(existingReview);
+        }
+        else
+        {
+            var newReview = new Review(rating, movie, user);
+            _unitOfWork.ReviewRepository.Add(newReview);
+        }
+
+        return _unitOfWork.Save();
     }
 }

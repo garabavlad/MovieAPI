@@ -1,23 +1,18 @@
-﻿using APIMovieExample.DataLayer;
-using Microsoft.EntityFrameworkCore;
+﻿using MovieAPI.Interfaces;
 using MovieAPI.Models;
 
 namespace MovieAPI.Business;
 
 public class MovieGenreBO
 {
-    private DbContext _context;
-    public MovieGenreBO(DbContext context)
+    private IUnitOfWork _unitOfWork;
+    public MovieGenreBO(IUnitOfWork unitOfWork)
     {
-        _context = context;
+        _unitOfWork = unitOfWork;
     }
 
-    public IEnumerable<MovieGenre> SearchForGenres(long parentId)
+    public IEnumerable<MovieGenre> SearchForMovieGenres_ByParentId(long movieId)
     {
-        MovieGenreDO reviewDO = new MovieGenreDO(_context);
-        IEnumerable<MovieGenre> genres = reviewDO.RetrieveMovieGenres(parentId);
-
-        return genres;
+        return _unitOfWork.MovieGenreRepository.Find(mg => mg.ParentMovieId == movieId);
     }
-
 }

@@ -1,51 +1,47 @@
-﻿using APIMovieExample.DataLayer;
-using Microsoft.EntityFrameworkCore;
+﻿using MovieAPI.Interfaces;
 using MovieAPI.Models;
 
 namespace MovieAPI.Business;
 
 public class UserBO
 {
-    private User _contextEntity;
-    private DbContext _context;
-    public UserBO(DbContext context)
+    private IUnitOfWork _unitOfWork;
+    public UserBO(IUnitOfWork unitOfWork)
     {
-        _context = context;
+        _unitOfWork = unitOfWork;
     }
 
-    public void SetEntityContext(User contextEntity)
+    public User GetEntity(int Id)
     {
-        _contextEntity = contextEntity;
-    }
-
-    public User GetEntityContext()
-    {
-        return _contextEntity;
-    }
-
-    public User GetEntity(long Id)
-    {
-        UserDO userDO = new UserDO(_context);
-        return userDO.GetEntity(Id);
+        return _unitOfWork.UserRepository.GetById(Id);
     }
 
     public User SearchForUser(String username)
     {
-        UserDO userDO = new UserDO(_context);
-        return userDO.GetEntity(username);
+        return _unitOfWork.UserRepository.Find(u => u.Username.ToLower() == username.ToLower()).FirstOrDefault();
     }
 
-    public IEnumerable<Movie> GetTop5MoviesByRating()
+    public IEnumerable<Movie> GetTop5MoviesByRating(User user)
     {
-        ReviewBO reviewBO = new ReviewBO(_context);
-        MovieBO movieBO = new MovieBO(_context);
+        var movieIds = _unitOfWork.ReviewRepository
+            .GetAll()
+            .Where(rw => rw.ParentUserId == user.Id)
+            .OrderByDescending(R => R.Rating)
+            .ThenBy(R => R.Movie.Title)
+            .Distinct()
+            .Select(R => R.ParentMovieId)
+            .Take(5)
+            .ToList();
 
-        // Retrieving the top 5 review movies
-        List<Review> reviews = reviewBO.SearchForReviewsByUserParent(_contextEntity.Id).OrderByDescending(R => R.Rating).Take(5).ToList();
-        List<Movie> movies = new List<Movie>();
+        var movieBO = new MovieBO(_unitOfWork);
+        var movieList = new List<Movie>();
+        var nonCircularMovies = movieBO.GetAllNonCircular();
 
-        reviews.ForEach(R => movies.Add(movieBO.GetEntity(R.ParentMovieId))); // Adding each movie model to the list for each of the top 5 reviews
+        foreach (var movieId in movieIds)
+            movieList.Add(nonCircularMovies.First(m => m.Id == movieId));
 
-        return movies.OrderBy(M => M.Title);
+        _unitOfWork.MovieGenreRepository.GetAll(); // load movie genres
+   
+        return movieList;
     }
 }

@@ -1,46 +1,29 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using APIMovie.Controllers;
-using APIMovieExample.DataLayer;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using MovieAPI.Business;
-using MovieAPI.Models;
+using MovieAPI.Interfaces;
 
 namespace APIMovieExample.Controllers
 {
     [ApiController]
-    [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
-    public class BController : APIMovieController
+    [Route("api/[controller]")]
+    public class BController : ControllerBase
     {
         private MovieBO _movieBO;
-        //private readonly MovieDatabaseContext _context;
 
-        public BController(MovieDatabaseContext context)
+        public BController(IUnitOfWork unitOfWork)
         {
-            _movieBO = new MovieBO(context);
-            //_context = context;
+            _movieBO = new MovieBO(unitOfWork);
         }
 
-        [Microsoft.AspNetCore.Mvc.HttpGet]
-        public async Task<IActionResult> SearchForMovie()
+        [HttpGet]
+        public IActionResult SearchForMovie()
         {
-            IActionResult result;
-            IEnumerable<Movie> selectedMovies;
+            var selectedMovies = _movieBO.GetTop5MoviesByRating();
 
-            selectedMovies = _movieBO.GetTop5MoviesByRating();
-
-            if (selectedMovies.Count() > 0)
-            {
-                result = Ok(selectedMovies);
-
-            }
-            else
-            {
-                result = NotFound();
-            }
-
-            return result;
+            return selectedMovies.Count() > 0
+                ? Ok (selectedMovies)
+                : NotFound();
         }
     }
 }
