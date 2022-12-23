@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 using MovieAPI.Interfaces;
 using MovieAPI.Persistance;
 
-namespace APIMovieExample
+namespace APIMovie
 {
     public class Startup
     {

@@ -10,11 +10,6 @@ public class MovieRepository : GenericRepository<Movie>, IMovieRepository
     {
     }
 
-    public IEnumerable<MovieGenre> SearchForMovieGenres_ByParentId(long movieId)
-    {
-        return _context.MovieGenres.Where(mg => mg.ParentMovieId == movieId);
-    }
-
     public new IEnumerable<Movie> GetAll()
     {
         return _context.Movies.Include(m => m.Reviews).Include(m => m.GenreMovie);
